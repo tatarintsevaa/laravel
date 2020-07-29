@@ -18,9 +18,9 @@ Route::get('/', function () {
 });
 
 Route::get('/info', function () {
-    return view('test');
+    return view('info');
 });
 
 Route::get('/news', function () {
-    echo 'test2';
+    return view('news');
 });
