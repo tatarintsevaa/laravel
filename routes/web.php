@@ -13,10 +13,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'NewsController@index');
+Route::get('/admin', 'Admin\IndexController@index')->name('admin.index');
+
+Route::get('/', 'IndexController@index')->name('home');
+
+Route::get('/news/', 'NewsController@index')->name('news');
+Route::get('/news/{id}', 'NewsController@show')->name('newsOne');
+//Route::get('/news', 'IndexController@index');
+
 
 
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+//Route::get('/home', 'HomeController@index')->name('home');
