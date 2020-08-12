@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <h3 class="title">Список ТОП новостей</h3>
-    <!-- тут будем выводить топ 6 новостей из базы -->
+    <!-- тут будем выводить свежие  новостей из базы -->
     <div class="row news-box">
         <div class="col-md-4">
             <h2>Heading</h2>

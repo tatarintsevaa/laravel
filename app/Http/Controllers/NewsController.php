@@ -16,4 +16,5 @@ class NewsController extends Controller
     {
         return view('news.newsOne')->with('news', News::getOneNews($id)) ;
     }
+
 }

@@ -6,6 +6,9 @@
         <a class="nav-link"  href="{{ route('news') }}">Новости</a>
     </li>
     <li class="nav-item">
+        <a class="nav-link"  href="{{ route('categories') }}">Новости по категориям</a>
+    </li>
+    <li class="nav-item">
         <a class="nav-link"  href="{{ route('admin.index') }}">Админка</a>
     </li>
 {{--    <li class="nav-item">--}}
