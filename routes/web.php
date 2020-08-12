@@ -13,14 +13,21 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('greeting');
-});
 
-Route::get('/info', function () {
-    return view('test');
-});
 
-Route::get('/news', function () {
-    echo 'test2';
-});
+Route::get('/', 'IndexController@index')->name('home');
+
+Route::get('/admin', 'Admin\IndexController@index')->name('admin.index');
+
+Route::get('/news/', 'NewsController@index')->name('news');
+Route::get('/news/{id}', 'NewsController@show')->name('newsOne');
+
+Route::get('/categories', 'CategoryController@index')->name('categories');
+Route::get('/categories/{name}', 'CategoryController@show')->name('newsByCategories');
+
+
+
+
+Auth::routes();
+
+//Route::get('/home', 'HomeController@index')->name('home');
